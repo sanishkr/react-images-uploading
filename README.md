@@ -1,4 +1,4 @@
-# react-images-uploading
+# sns-react-images-uploading
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/6290720/91559755-9d6e8c00-e973-11ea-9bde-4b60c89f441a.png" width="250" />
@@ -37,13 +37,13 @@ This approach allows you to fully control UI component and behaviours.
 **npm**
 
 ```bash
-npm install --save react-images-uploading
+npm install --save sns-react-images-uploading
 ```
 
 **yarn**
 
 ```bash
-yarn add react-images-uploading
+yarn add sns-react-images-uploading
 ```
 
 ## Usage
@@ -58,7 +58,7 @@ You can check out the basic demo here:
 
 ```tsx
 import React from 'react';
-import ImageUploading from 'react-images-uploading';
+import ImageUploading from 'sns-react-images-uploading';
 
 export function App() {
   const [images, setImages] = React.useState([]);
