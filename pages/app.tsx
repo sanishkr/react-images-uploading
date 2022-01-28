@@ -10,6 +10,10 @@ export const App = () => {
     setImages(imageList);
   };
 
+  const errorHandler = (errors) => {
+    console.table({ errors });
+  };
+
   return (
     <div className="App">
       <ImageUploading
@@ -18,6 +22,12 @@ export const App = () => {
         onChange={onChange}
         maxNumber={maxNumber}
         dataURLKey="data_url"
+        resolutionType="absolute"
+        maxFileSize={25 * 1024}
+        acceptType={['jpg', 'png']}
+        resolutionWidth={400}
+        resolutionHeight={298}
+        onError={errorHandler}
       >
         {({
           imageList,
